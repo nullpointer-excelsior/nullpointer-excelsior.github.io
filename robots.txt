@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://nullpointer-excelsior.github.io/sitemap.xml
