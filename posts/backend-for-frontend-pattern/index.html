@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="es-ES" data-mode="dark" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="Backend for Frontend pattern" /><meta name="author" content="Benjamin" /><meta property="og:locale" content="es_ES" /><meta name="description" content="Ingeniería de software aplicada, tips, buenas práctias y códigos" /><meta property="og:description" content="Ingeniería de software aplicada, tips, buenas práctias y códigos" /><link rel="canonical" href="https://nullpointer-excelsior.github.io/posts/backend-for-frontend-pattern/" /><meta property="og:url" content="https://nullpointer-excelsior.github.io/posts/backend-for-frontend-pattern/" /><meta property="og:site_name" content="Nullpointer Excelsior" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2024-06-24T01:00:00-04:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Backend for Frontend pattern" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Benjamin"},"dateModified":"2024-06-24T01:00:00-04:00","datePublished":"2024-06-24T01:00:00-04:00","description":"Ingeniería de software aplicada, tips, buenas práctias y códigos","headline":"Backend for Frontend pattern","mainEntityOfPage":{"@type":"WebPage","@id":"https://nullpointer-excelsior.github.io/posts/backend-for-frontend-pattern/"},"url":"https://nullpointer-excelsior.github.io/posts/backend-for-frontend-pattern/"}</script><title>Backend for Frontend pattern | Nullpointer Excelsior</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Nullpointer Excelsior"><meta name="application-name" content="Nullpointer Excelsior"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/avatar.webp" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Nullpointer Excelsior</a></div><div class="site-subtitle font-italic">Ingeniería de software aplicada</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>INICIO</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORÍAS</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>ETIQUETAS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVO</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ACERCA DE</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/nullpointer-excelsior" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a></div></div><div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Inicio </a> </span> <span>Backend for Frontend pattern</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Entrada</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Buscar..."> </span> <span id="search-cancel" >Cancelar</span></div></div><div id="main-wrapper" class="d-flex justify-content-center"><div id="main" class="container pl-xl-4 pr-xl-4"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2"><h1 data-toc-skip>Backend for Frontend pattern</h1><div class="post-meta text-muted"> <span> Publicado <em class="" data-ts="1719205200" data-df="YYYY-MM-DD" data-toggle="tooltip" data-placement="bottom"> 2024-06-24 </em> </span><div class="d-flex justify-content-between"> <span> Por <em> Benjamin </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1193 palabras"> <em>6 min</em> de lectura</span></div></div></div><div class="post-content"><p><img data-src="/assets/img/intros/intro8.webp" alt="intro" data-proofer-ignore></p><p>Cuando optamos por una arquitectura basada en microservicios, hemos dividido un sistema complejo en pequeñas partes independientes y con responsabilidades definidas. A su vez, surge la necesidad de gestionar el acceso y consumo de los microservicios que hemos desarrollado. Para lograrlo, podemos hacer uso del patrón BFF (Backend for Frontend). La idea es similar a la de un api gateway, un componente central encargado de gestionar las peticiones de los clientes y redireccionar la petición al servicio adecuado. La gran diferencia es que BFF es una aplicación específica para una aplicación cliente, como puede ser un frontend, aplicación móvil u otro tipo de cliente.</p><h2 id="tipos-de-bff"><span class="mr-2">Tipos de BFF</span><a href="#tipos-de-bff" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Existen 2 tipos principales de BFF:</p><ul><li><code class="language-plaintext highlighter-rouge">BFF específico por dispositivo</code>: se construye una aplicación BFF por tipo de dispositivo, generalmente uno para una versión web y otro para una versión móvil.<li><code class="language-plaintext highlighter-rouge">BFF por dominio</code>: se centra en construir un BFF por funcionalidad. Por ejemplo, un BFF para ventas, otro para usuarios, otro para clientes, etc.</ul><h2 id="ejemplo-e-implementación-tecnológica-de-bff-por-dispositivo"><span class="mr-2">Ejemplo e implementación tecnológica de BFF por dispositivo</span><a href="#ejemplo-e-implementación-tecnológica-de-bff-por-dispositivo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Tomaremos un ejemplo de implementación de BFF basado en nuestra querida arquitectura de clone spotify.</p><h3 id="en-contexto"><span class="mr-2">En contexto</span><a href="#en-contexto" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Nuestro spotify-clone tiene 2 clientes disponibles: web y mobile. Ambas aplicaciones están definidas para un cliente específico, ya que cada tipo de cliente tiene diferentes requerimientos. Por ejemplo, una aplicación móvil tendrá que lidiar con problemas de latencia y también tendrá muchas más funcionalidades que una aplicación versión web. Por lo tanto, el diseño de la API del BFF mobile debería poder ofrecer un alto nivel de flexibilidad. Por otro lado, nuestra BFF versión web no tendrá que lidiar con problemas de latencia tan frecuentemente como la versión móvil, y la cantidad de funcionalidades puede diferir en comparación con la versión mobile. Para construir nuestros BFFs, optaremos por 2 tecnologías distintas:</p><ul><li><code class="language-plaintext highlighter-rouge">web-bff</code>: Aplicación backend basada en RESTful.<li><code class="language-plaintext highlighter-rouge">mobile-bff</code>: Aplicación backend basada en GraphQL.</ul><h2 id="graphql-vs-restful"><span class="mr-2">GraphQL vs RESTful</span><a href="#graphql-vs-restful" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>GraphQL es una tecnología que permite a los clientes especificar exactamente qué datos necesitan en una única solicitud y devuelve respuestas estructuradas según lo solicitado, utilizando normalmente un único endpoint. Por otro lado, una API RESTful utiliza múltiples endpoints con estructuras de datos fijas y a menudo requiere múltiples solicitudes para obtener toda la información necesaria, lo que puede ser menos eficiente en la red.</p><p>GraphQL es ideal para las necesidades de la aplicación BFF-mobile, mientras que una API RESTful es suficiente para bff-web dentro del contexto de <code class="language-plaintext highlighter-rouge">spotify-clone</code>.</p><h2 id="construyendo-un-bff"><span class="mr-2">Construyendo un BFF</span><a href="#construyendo-un-bff" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Al construir un BFF, definiremos la estructura de las peticiones y respuestas. A menudo, un BFF realiza múltiples peticiones a microservicios y agrupa las respuestas en una sola para devolverla al cliente. Un BFF no debería manejar ninguna lógica de negocio más que saber qué servicio llamar y cómo devolver las respuestas. A su vez, un BFF puede centralizar la autenticación, autorización y caché.</p><p><img data-src="/assets/img/examples/bff-pattern.webp" alt="bff-pattern" data-proofer-ignore></p><h2 id="código-de-ejemplo"><span class="mr-2">Código de ejemplo</span><a href="#código-de-ejemplo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>NestJs nos permite integrar GraphQL de forma sencilla, ya que podemos definir el modelo de las queries, mutaciones y suscripciones mediante anotaciones. Explicaré brevemente las partes de GraphQL para mostrar la idea.</p><blockquote class="prompt-info"><div><p>La aplicación de ejemplo la encuentras en el siguiente enlace <a href="https://github.com/nullpointer-excelsior/microservices-architecture-nestjs/tree/master/apps/mobile-bff">bff-mobile app</a></p></div></blockquote><h3 id="modelo"><span class="mr-2">Modelo</span><a href="#modelo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Definimos el modelo de la entidad que queremos exponer. A su vez, este modelo puede exponer otros modelos mediante propiedades. Hacemos uso de decoradores para poder definir el esquema de nuestra API GraphQL.</p><div class="language-typescript highlighter-rouge"><div class="code-header"> <span data-label-text="TypeScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre><td class="rouge-code"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Field</span><span class="p">,</span> <span class="nx">ObjectType</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@nestjs/graphql</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Album</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./album.model</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">ObjectType</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Artist</span> <span class="p">{</span>
+
+    <span class="p">@</span><span class="nd">Field</span><span class="p">({</span> <span class="na">nullable</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+    <span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+
+    <span class="p">@</span><span class="nd">Field</span><span class="p">()</span>
+    <span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+    
+    <span class="p">@</span><span class="nd">Field</span><span class="p">({</span> <span class="na">nullable</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+    <span class="nx">photo</span><span class="p">?:</span> <span class="kr">string</span><span class="p">;</span>
+
+    <span class="p">@</span><span class="nd">Field</span><span class="p">({</span> <span class="na">nullable</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+    <span class="nx">biography</span><span class="p">?:</span> <span class="kr">string</span><span class="p">;</span>
+
+    <span class="c1">// eslint-disable-next-line @typescript-eslint/no-unused-vars</span>
+    <span class="p">@</span><span class="nd">Field</span><span class="p">(</span><span class="kd">type</span> <span class="o">=&gt;</span><span class="p">[</span><span class="nx">Album</span><span class="p">],</span> <span class="p">{</span> <span class="na">nullable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">itemsAndList</span><span class="dl">'</span> <span class="p">})</span>
+    <span class="nx">albums</span><span class="p">?:</span> <span class="nx">Album</span><span class="p">[]</span>
+  
+<span class="p">}</span>
+</pre></table></code></div></div><h3 id="resolvers"><span class="mr-2">Resolvers</span><a href="#resolvers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Los resolvers son un componente que le dice a GraphQL cómo debe obtener los datos que les son solicitados. NestJs nos provee más decoradores para poder definir el esquema de datos de nuestra API GraphQL.</p><div class="language-typescript highlighter-rouge"><div class="code-header"> <span data-label-text="TypeScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre><td class="rouge-code"><pre><span class="p">@</span><span class="nd">Resolver</span><span class="p">(</span><span class="k">of</span> <span class="o">=&gt;</span> <span class="nx">Artist</span><span class="p">)</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">ArtistResolver</span> <span class="p">{</span>
+
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">private</span> <span class="nx">grpc</span><span class="p">:</span> <span class="nx">MusicCatalogClient</span><span class="p">)</span> <span class="p">{}</span>
+
+    <span class="p">@</span><span class="nd">Span</span><span class="p">(</span><span class="dl">"</span><span class="s2">ArtistResolver/query/artistById</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">@</span><span class="nd">Query</span><span class="p">(</span><span class="nx">returns</span> <span class="o">=&gt;</span> <span class="nx">Artist</span><span class="p">)</span>
+    <span class="nx">artistById</span><span class="p">(@</span><span class="nd">Args</span><span class="p">(</span><span class="dl">'</span><span class="s1">id</span><span class="dl">'</span><span class="p">)</span> <span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">grpc</span><span class="p">.</span><span class="nx">findArtistById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="p">@</span><span class="nd">Span</span><span class="p">(</span><span class="dl">"</span><span class="s2">ArtistResolver/query/artists</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">@</span><span class="nd">Query</span><span class="p">(</span><span class="nx">returns</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">Artist</span><span class="p">])</span>
+    <span class="nx">artists</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">grpc</span><span class="p">.</span><span class="nx">findAllArtists</span><span class="p">().</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">toArray</span><span class="p">())</span>
+    <span class="p">}</span>
+
+    <span class="p">@</span><span class="nd">Span</span><span class="p">(</span><span class="dl">"</span><span class="s2">ArtistResolver/field/album</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">@</span><span class="nd">ResolveField</span><span class="p">()</span>
+    <span class="k">async</span> <span class="nx">albums</span><span class="p">(@</span><span class="nd">Parent</span><span class="p">()</span> <span class="nx">artist</span><span class="p">:</span> <span class="nx">Artist</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">grpc</span><span class="p">.</span><span class="nx">findAlbumsByArtistId</span><span class="p">(</span><span class="nx">artist</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">toArray</span><span class="p">())</span>
+    <span class="p">}</span>
+    
+<span class="p">}</span>
+</pre></table></code></div></div><h3 id="api-client"><span class="mr-2">API Client</span><a href="#api-client" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>En este caso, hacemos uso de un servicio de gRPC para obtener los datos. También podemos hacer llamados a APIs REST dependiendo de la API que necesitemos consumir.</p><div class="language-typescript highlighter-rouge"><div class="code-header"> <span data-label-text="TypeScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+</pre><td class="rouge-code"><pre><span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MusicCatalogClient</span> <span class="k">implements</span> <span class="nx">OnModuleInit</span> <span class="p">{</span>
+
+    <span class="k">private</span> <span class="nx">artistService</span><span class="p">:</span> <span class="nx">ArtistService</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nx">albumService</span><span class="p">:</span> <span class="nx">AlbumService</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nx">songService</span><span class="p">:</span> <span class="nx">SongService</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nx">genreService</span><span class="p">:</span> <span class="nx">GenreService</span><span class="p">;</span>
+    
+    <span class="kd">constructor</span><span class="p">(@</span><span class="nd">Inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">MUSIC_CATALOG_PACKAGE</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">client</span><span class="p">:</span> <span class="nx">ClientGrpc</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+    <span class="nx">onModuleInit</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">artistService</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">client</span><span class="p">.</span><span class="nx">getService</span><span class="o">&lt;</span><span class="nx">ArtistService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">ArtistService</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">albumService</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">client</span><span class="p">.</span><span class="nx">getService</span><span class="o">&lt;</span><span class="nx">AlbumService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">AlbumService</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">songService</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">client</span><span class="p">.</span><span class="nx">getService</span><span class="o">&lt;</span><span class="nx">SongService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">SongService</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">genreService</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">client</span><span class="p">.</span><span class="nx">getService</span><span class="o">&lt;</span><span class="nx">GenreService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">GenreService</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">findAllArtists</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">artistService</span><span class="p">.</span><span class="nx">GetAllArtists</span><span class="p">({});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findArtistById</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">artistService</span><span class="p">.</span><span class="nx">GetArtistById</span><span class="p">({</span> <span class="nx">id</span> <span class="p">})</span>
+    <span class="p">}</span>   
+
+    <span class="nx">findAllAlbums</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">albumService</span><span class="p">.</span><span class="nx">GetAllAlbums</span><span class="p">({});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findAlbumById</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">albumService</span><span class="p">.</span><span class="nx">GetAlbumById</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findAlbumsByArtistId</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">albumService</span><span class="p">.</span><span class="nx">GetAlbumsByArtistId</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>   
+
+    <span class="nx">findAllSongs</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetAllSongs</span><span class="p">({});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findSongById</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetSongById</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findSongsByIds</span><span class="p">(</span><span class="nx">ids</span><span class="p">:</span> <span class="kr">string</span><span class="p">[])</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetSongsByIds</span><span class="p">(</span><span class="nx">ids</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">id</span> <span class="o">=&gt;</span> <span class="p">({</span> <span class="nx">id</span> <span class="p">})));</span>
+    <span class="p">}</span>
+
+    <span class="nx">findSongsByArtistId</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetSongsByArtistId</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+    
+    <span class="nx">findSongsByAlbumId</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetSongsByAlbumId</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findSongsByGenreId</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">songService</span><span class="p">.</span><span class="nx">GetSongsByGenreId</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findAllGenres</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">genreService</span><span class="p">.</span><span class="nx">GetAllGenres</span><span class="p">({});</span>
+    <span class="p">}</span>
+
+    <span class="nx">findGenreById</span><span class="p">(</span><span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">genreService</span><span class="p">.</span><span class="nx">GetGenreById</span><span class="p">({</span> <span class="nx">id</span> <span class="p">});</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></table></code></div></div><p>Hacemos definición de los módulos para que NestJs pueda iniciar la aplicación.</p><div class="language-typescript highlighter-rouge"><div class="code-header"> <span data-label-text="TypeScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre><td class="rouge-code"><pre><span class="p">@</span><span class="nd">Module</span><span class="p">({</span>
+  <span class="na">imports</span><span class="p">:</span> <span class="p">[</span>
+    <span class="nx">ConfigModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(),</span>
+    <span class="nx">GraphQLModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="o">&lt;</span><span class="nx">ApolloDriverConfig</span><span class="o">&gt;</span><span class="p">({</span>
+      <span class="na">driver</span><span class="p">:</span> <span class="nx">ApolloDriver</span><span class="p">,</span>
+      <span class="na">autoSchemaFile</span><span class="p">:</span> <span class="nx">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">apps/mobile-bff/schema.gql</span><span class="dl">'</span><span class="p">),</span>
+    <span class="p">}),</span>
+    <span class="nx">MusicLibraryGrpcModule</span><span class="p">,</span>
+    <span class="nx">MusicLibraryApiModule</span><span class="p">,</span>
+    <span class="nx">MusicDiscoveryApiModule</span><span class="p">,</span>
+    <span class="nx">MusciPlayerModule</span>
+  <span class="p">],</span>
+  <span class="na">providers</span><span class="p">:</span> <span class="p">[</span>
+    <span class="nx">ArtistResolver</span><span class="p">,</span>
+    <span class="nx">AlbumResolver</span><span class="p">,</span>
+    <span class="nx">GenreResolver</span><span class="p">,</span>
+    <span class="nx">SongResolver</span><span class="p">,</span>
+    <span class="nx">RadioResolver</span><span class="p">,</span>
+  <span class="p">],</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MobileBffModule</span> <span class="p">{</span> <span class="p">}</span>
+</pre></table></code></div></div><p>Para probar la API, inicia los siguientes servicios.</p><div class="language-bash highlighter-rouge"><div class="code-header"> <span data-label-text="Shell"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="c"># you need docker for infra</span>
+npm run start:infra
+<span class="c"># populate data</span>
+npm run job:create-music-library
+npm run start:music-library
+npm run start:discovery
+npm run start:media
+npm run start:mobile-bff
+</pre></table></code></div></div><p>Puedes dirigirte a http://localhost:3014/graphql y visualizar una Playground que nos provee GraphQL por defecto, donde podrás consultar el esquema de la API y realizar consultas.</p><p><img data-src="/assets/img/examples/gql-dashboard.webp" alt="gql-dashboard" data-proofer-ignore></p><h2 id="conclusiones"><span class="mr-2">Conclusiones</span><a href="#conclusiones" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>BFF nos permite centralizar el acceso a microservicios en un solo punto de entrada para las aplicaciones cliente. Dependiendo de las necesidades, tenemos disponibles distintas tecnologías para la comunicación, tanto para la comunicación de cliente a BFF como de BFF a microservicios. Como vimos en este ejemplo, GraphQL define una estructura de consulta eficiente para aplicaciones cliente móviles. La elección de la tecnología que expondremos al cliente dependerá del contexto. Lo importante es que mediante BFF podamos centralizar las peticiones a los microservicios en un único punto y podamos exponer de forma sencilla nuestro sistema.</p><h2 id="github-repository"><span class="mr-2"><a href="https://github.com/nullpointer-excelsior/microservices-architecture-nestjs/">Github repository</a></span><a href="#github-repository" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><h3 id="meme-de-despedida"><span class="mr-2">Meme de despedida</span><a href="#meme-de-despedida" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p><img data-src="/assets/img/memes/meme6.webp" alt="meme" data-proofer-ignore></p></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='//categories/backend-frontend-graphql-software/'>Backend,Frontend,GraphQL,Software</a>, <a href='//categories/engineer/'>Engineer</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="//tags/backend-frontend-graphql-software/" class="post-tag no-text-decoration" >backend,frontend,graphql,software</a> <a href="//tags/engineer/" class="post-tag no-text-decoration" >engineer</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> Esta entrada está licenciada bajo <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> por el autor.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Compartir</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Backend+for+Frontend+pattern+-+Nullpointer+Excelsior&url=https%3A%2F%2Fnullpointer-excelsior.github.io%2Fposts%2Fbackend-for-frontend-pattern%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Backend+for+Frontend+pattern+-+Nullpointer+Excelsior&u=https%3A%2F%2Fnullpointer-excelsior.github.io%2Fposts%2Fbackend-for-frontend-pattern%2F" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2Fnullpointer-excelsior.github.io%2Fposts%2Fbackend-for-frontend-pattern%2F&text=Backend+for+Frontend+pattern+-+Nullpointer+Excelsior" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnullpointer-excelsior.github.io%2Fposts%2Fbackend-for-frontend-pattern%2F" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copiar enlace" data-title-succeed="¡Enlace copiado!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Actualizado recientemente</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/microservicios-observabilidad-en-microservicios-un-ejemplo-practico-de-trazas-distribuidas/">Microservicios 2 Observabilidad en NestJs, un ejemplo práctico de trazas distribuidas</a><li><a href="/posts/realtime-with-reactive-programming/">Aplicaciones en tiempo real con programación reactiva</a><li><a href="/posts/tranajando-con-1millon-de-registros-con-java-stream/">Trabajando con 1 millón de registros con Java Stream</a><li><a href="/posts/disenando-microservicios-con-ddd/">Diseñando Microservicios con Domain Driven Design y NestJS</a><li><a href="/posts/alto-rendimiento-con-cqrs-eventos-en-nestjs/">CQRS en Soluciones de Alto Rendimiento con Nestjs</a></ul></div><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/typescript/">typescript</a> <a class="post-tag" href="/tags/nestjs/">nestjs</a> <a class="post-tag" href="/tags/arquitectura/">arquitectura</a> <a class="post-tag" href="/tags/hexagonal/">hexagonal</a> <a class="post-tag" href="/tags/javascript/">javascript</a> <a class="post-tag" href="/tags/frontend/">frontend</a> <a class="post-tag" href="/tags/java/">Java</a> <a class="post-tag" href="/tags/microservicios/">microservicios,</a> <a class="post-tag" href="/tags/typescript/">Typescript</a> <a class="post-tag" href="/tags/architecture/">Architecture</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contenido</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Lecturas adicionales</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/microservicios-1-construyendo-aplicaciones-escalables-y-mantenibles/"><div class="card-body"> <em class="small" data-ts="1698382800" data-df="YYYY-MM-DD" > 2023-10-27 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>MicroServicios 1 Construyendo aplicaciones escalables y mantenibles</h3><div class="text-muted small"><p> En este capítulo tomaremos nota de pequeños tips para generar aplicaciones escalables y mantenibles, las cuales podrán ayudarte de manera más sencilla en una posible transición de monolito a micr...</p></div></div></a></div><div class="card"> <a href="/posts/simplificando-el-manejo-del-estado-en-agular/"><div class="card-body"> <em class="small" data-ts="1743483600" data-df="YYYY-MM-DD" > 2025-04-01 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Estrategias de manejo del estado: separando la lógica de negocio y la interfaz de usuario</h3><div class="text-muted small"><p> La gestión del estado en aplicaciones Angular complejas puede ser un desafío. Aunque NgRx es la opción más popular, su verbosidad y complejidad pueden desanimar a los desarrolladores. Por el cont...</p></div></div></a></div><div class="card"> <a href="/posts/resena-del-libro-enterprise-integration-patterns/"><div class="card-body"> <em class="small" data-ts="1739854800" data-df="YYYY-MM-DD" > 2025-02-18 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Reseña del Libro Enterprise Integration Patterns</h3><div class="text-muted small"><p> Resumen General Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions es un libro escrito en 2003 por Gregor Hohpe y Bobby Woolf que explora cómo integrar soluci...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="//posts/repository-pattern-simple-escalable-y-para-todo-tipo-de-proyectos/" class="btn btn-outline-primary" prompt="Anterior"><p>Repository pattern simple escalable y para todo tipo de proyectos</p></a> <a href="//posts/integracion-de-arquitectura-hexagonal-en-spring/" class="btn btn-outline-primary" prompt="Nuevo"><p>Integración de arquitectura hexagonal en Spring</p></a></div></div></div><footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0"><div class="footer-left"><p class="mb-0"> © 2025 <a href="https://github.com/nullpointer-excelsior">Benjamin</a>. <span data-toggle="tooltip" data-placement="top" title="Salvo que se indique explícitamente, las entradas de este blog están licenciadas bajo la Creative Commons Attribution 4.0 International (CC BY 4.0) License por el autor.">Algunos derechos reservados.</span></p></div><div class="footer-right"><p class="mb-0"> Hecho con <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> usando el tema <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> .</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/typescript/">typescript</a> <a class="post-tag" href="/tags/nestjs/">nestjs</a> <a class="post-tag" href="/tags/arquitectura/">arquitectura</a> <a class="post-tag" href="/tags/hexagonal/">hexagonal</a> <a class="post-tag" href="/tags/javascript/">javascript</a> <a class="post-tag" href="/tags/frontend/">frontend</a> <a class="post-tag" href="/tags/java/">Java</a> <a class="post-tag" href="/tags/microservicios/">microservicios,</a> <a class="post-tag" href="/tags/typescript/">Typescript</a> <a class="post-tag" href="/tags/architecture/">Architecture</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">¡Oops! No se encuentran resultados.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/es.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/unregister.js"></script>
